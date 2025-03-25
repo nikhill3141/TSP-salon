@@ -4,20 +4,20 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 
 const testimonials = [
   {
-    name: "Jessica L.",
-    image: "https://images.pexels.com/photos/296649/pexels-photo-296649.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Prerana Shewale",
+    image: "https://images.pexels.com/photos/296649/pexels-photo-296649.jpeg?auto=compress&cs=tinysrgb&w=600  ",
     text: "I've been coming to TSP Salon for three years now, and I wouldn't trust anyone else with my hair. The atmosphere is relaxing, and everyone is so professional and friendly.",
+    rating: "★★★★",
+  },
+  {
+    name: "Tushar Ahire",
+    image: "https://lh3.googleusercontent.com/a-/ALV-UjUhcq90T-fOotrmBM1fp6EuwW5lVDoQa8yvNHsRsFz7Kx6Gq1Cv=w75-h75-p-rp-mo-ba3-br100",
+    text: "The facial treatment I received from TSP Salon experienced staff was absolutely amazing! They analyzed my skin and created a custom treatment that addressed all my concerns. My confidence has improved so much!",
     rating: "★★★★★",
   },
   {
-    name: "Emily R.",
-    image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
-    text: "The facial treatment I received from Emily was absolutely amazing! She analyzed my skin and created a custom treatment that addressed all my concerns. My skin has never looked better!",
-    rating: "★★★★★",
-  },
-  {
-    name: "Michael D.",
-    image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600",
+    name: "Pooja Dond",
+    image: "Public/images/woman.png",
     text: "I got the best haircut from TSP Salon! The stylist was very professional and understood exactly what I wanted. Highly recommended!",
     rating: "★★★★★",
   },

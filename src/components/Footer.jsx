@@ -1,12 +1,20 @@
+import { Contact, Contact2, MessageCircle, User } from "lucide-react";
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaFileContract,
+  FaInstagram,
+  FaTwitter,
+  FaWhatsapp,
+  FaWhatsappSquare,
+  FaYoutube,
+} from "react-icons/fa";
 import { FaDev } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer id="contact" className="bg-gray-900 text-white py-8 px-4 sm:px-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
-        
         {/* Left Section - Salon Info & Links */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
           <h2 className="text-xl font-bold tracking-wide">TSP Salon</h2>
@@ -14,31 +22,58 @@ export default function Footer() {
             Our Goal is to Elevate your looks through our Experties!
           </p>
           <ul className="flex flex-wrap justify-center md:justify-start gap-4 text-gray-400 text-sm">
-            <li><a href="#services" className="hover:text-white transition">Services</a></li>
-            <li><a href="#gallery" className="hover:text-white transition">Gallery</a></li>
-            <li><a href="#testimonials" className="hover:text-white transition">Testimonials</a></li>
-            <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
+            <li>
+              <a href="#services" className="hover:text-white transition">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#gallery" className="hover:text-white transition">
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a href="#testimonials" className="hover:text-white transition">
+                Testimonials
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-white transition">
+                Contact
+              </a>
+            </li>
           </ul>
 
           {/* Social Icons */}
-          <div className="flex gap-4 mt-4">
-            <a href="#" className="text-gray-400 hover:text-white transition text-xl">
-              <FaFacebook />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white transition text-xl">
+          <div className="flex gap-6 mt-4 items-center">
+            <a
+              href="https://www.instagram.com/tsp_hair_and_makeup_salon/"
+              target="_blank"
+              className="text-gray-400 hover:text-white transition text-xl"
+            >
               <FaInstagram />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition text-xl">
-              <FaTwitter />
+            <a
+              href="https://wa.me/919518329121?text=Hello%20there!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition text-xl"
+            >
+              <FaWhatsapp />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition text-xl">
-              <FaYoutube />
+            <a
+              href="tel:+919518329121"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition "
+            >
+              <User />
             </a>
           </div>
         </div>
 
         {/* Right Section - Google Map */}
-        
+
         <div className="w-full md:w-80 h-48 rounded-lg overflow-hidden shadow-lg">
           <iframe
             title="Salon Location"
@@ -47,7 +82,6 @@ export default function Footer() {
             allowFullScreen=""
             loading="lazy"
           ></iframe>
-          
         </div>
       </div>
 
@@ -55,10 +89,13 @@ export default function Footer() {
       <div className="text-center text-gray-500 text-sm mt-6">
         &copy; {new Date().getFullYear()} TSP Salon. All Rights Reserved.
       </div>
-      
-      <a href="https://www.instagram.com/nikhilmali3141/" className="flex items-center gap-2 mt-2 justify-center text-sm font-light" ><FaDev /> Devloped by Nikhil</a>
-     
 
+      <a
+        href="tel:+917083851720"
+        className="flex items-center gap-2 mt-2 justify-center text-sm font-light"
+      >
+        <FaDev /> Devloped by Nikhil
+      </a>
     </footer>
   );
 }

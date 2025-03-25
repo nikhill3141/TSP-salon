@@ -16,13 +16,7 @@ const teamMembers = [
     image: "https://th.bing.com/th/id/OIP.fk40Tf4GqLFw13TUHjzQiwAAAA?w=199&h=199&c=7&r=0&o=5&dpr=1.3&pid=1.7",
     description: "Expert in modern cuts, balayage, and hair transformations with a passion for hairstyling.",
   },
-  {
-    id: 3,
-    name: "Sathish",
-    role: "Barber",
-    image: "https://th.bing.com/th/id/OIP.Mg_y_gfMmHBbowlefYR3AAHaHa?w=210&h=210&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-    description: "Master barber specializing in precision fades, beard grooming, and classic styles.",
-  },
+
 ];
 
 export default function TeamSection() {
@@ -46,7 +40,7 @@ export default function TeamSection() {
       </motion.p>
 
       {/* Team Members Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 w-full max-w-6xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5 w-full max-w-6xl">
         {teamMembers.map((member, index) => (
           <motion.div 
             key={member.id} 

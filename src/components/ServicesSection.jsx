@@ -4,32 +4,37 @@ const services = [
   {
     title: "Hair Services",
     image: "https://th.bing.com/th/id/OIP.G-PQMZwXiOpRZgof9nTAbwHaE7?rs=1&pid=ImgDetMain",
-    description: "Cutting-edge haircuts, coloring, highlights, balayage, and styling for all hair types.",
+    description: "Expert hair styling services including trendy haircuts, and creative Fades. Our skilled stylists ensure you leave with perfectly styled hair that suits your personality."
   },
+  
   {
     title: "Facial Treatments",
     image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-    description: "Customized facials, microdermabrasion, chemical peels, and anti-aging treatments.",
+    description: "Revitalize your skin with our luxurious facial treatments like lesar tretment for glowing skin and customize treatments to address your specific skin concerns. Experience glowing, healthy skin with our premium skincare services."
   },
+  
   {
-    title: "Massage Therapy",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-    description: "Swedish, deep tissue, hot stone, and aromatherapy massages for relaxation.",
+    title: "Hair Spa",
+    image: "https://www.healthshots.com/wp-content/uploads/2020/02/hairspa.jpg",
+    description: "Revive your hair with our hair spa treatments. Deep conditioning, scalp massage, and nourishing treatments to repair damage, reduce hair fall, and promote healthy growth.",
   },
   {
     title: "Hair Color",
-    image: "https://images.unsplash.com/photo-1610992015732-2449b76344bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-    description: "Transform your look with expert hair coloring, balayage, and highlights.",
+    image: "Public/images/HairColorImg.jpeg",
+    description: "Enhance your beauty with our premium hair coloring services. From classic shades to trendy highlights, and global colors. Our expert colorists create personalized looks that complement your style and skin tone."
   },
+
   {
     title: "Makeup Application",
-    image: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-    description: "Get a flawless look for any occasion with our professional makeup services.",
+    image: "Public/images/MakupImg.jpeg",
+    description: "Transform your look with our professional makeup services. our skilled artists use premium products to enhance your look and create stunning results perfect for any occasion - weddings, parties, or photoshoots."
   },
+  
+
   {
     title: "Waxing Services",
-    image: "https://www.kittykatwaxstudio.com/wp-content/uploads/2019/06/kitty-kat-wax-men-services.jpg",
-    description: "Smooth, hair-free skin with gentle and effective waxing for face and body.",
+    image: "https://tadaindia.com/wp-content/uploads/2018/11/shutterstock_376197193.jpg", 
+    description: "Experience gentle waxing services to get the hair free and smooth and shiny skin get red of dead skin cells and get a fresh look"
   }
 ];
 

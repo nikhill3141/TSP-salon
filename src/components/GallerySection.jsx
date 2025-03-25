@@ -4,14 +4,14 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 
 const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", alt: "Hair Styling Work" },
-  { src: "https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", alt: "Hair Styling Work" },
-  { src: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", alt: "Facial Treatment" },
-  { src: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", alt: "Massage Therapy" },
-  { src: "https://images.unsplash.com/photo-1610992015732-2449b76344bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", alt: "Nail Art" },
-  { src: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", alt: "Makeup Application" },
-  { src: "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", alt: "Salon Interior" },
-  { src: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80", alt: "Client Transformation" },
+  { src: "Public/images/Gallary1.jpeg", alt: "Hair Styling Work" },
+  { src: "Public/images/Gallary2.jpeg", alt: "Hair Styling Work" },
+  { src: "Public/images/Gallary3.jpeg", alt: "Hair Styling Work" },
+  { src: "Public/images/Gallary4.jpeg", alt: "Hair Styling Work" },
+  { src: "Public/images/Gallary5.jpeg", alt: "Makeup Application" },
+  { src: "Public/images/Gallary6.jpeg", alt: "Makeup Application" },
+  { src: "Public/images/Gallary7.jpeg", alt: "Makeup Application" },
+  { src: "Public/images/Gallary9.jpeg", alt: "Makeup Application" },
 ];
 
 export default function Gallery() {
@@ -37,6 +37,7 @@ export default function Gallery() {
         Showcasing our beautiful work and happy clients.
       </motion.p>
 
+      
       {/* Responsive Grid Layout */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {galleryImages.map((image, index) => (
@@ -60,13 +61,13 @@ export default function Gallery() {
 
       {/* Dialog for Image Preview */}
       <Dialog open={isDialogOpen} onOpenChange={() => setSelectedImageIndex(null)}>
-        <DialogContent className="flex flex-col justify-center items-center p-0 bg-transparent border-none shadow-none">
+        <DialogContent className="flex flex-col justify-center items-center m-0 bg-transparent border-none shadow-none [&>button]:border-0 [&>button]:bg-transparent [&>button]:shadow-none [&>button]:w-14 [&>button]:h-14 [&>button]:absolute [&>button]:top-0 [&>button]:right-0 [&>button]:z-50 [&>button_svg]:w-10 [&>button_svg]:h-10 [&>button_svg]:text-white [&>button_svg]:stroke-[3] [&>button_svg]:drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)]">
           {isDialogOpen && (
             <div className="relative w-auto max-w-[90vw] sm:max-w-[70vw]">
               <Carousel>
                 <CarouselContent>
                   {galleryImages.map((image, idx) => (
-                    <CarouselItem key={idx} className="flex justify-center items-center">
+                    <CarouselItem key={idx} className="flex justify-center items-center px-20">
                       <motion.img
                         src={image.src}
                         alt={image.alt}
@@ -79,8 +80,8 @@ export default function Gallery() {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg" />
-                <CarouselNext className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg" />
+                <CarouselPrevious className="absolute -left-32 md:-left-40 top-1/2 transform -translate-y-1/2 bg-white/80 p-4 rounded-full shadow-lg hover:bg-white/90" />
+                <CarouselNext className="absolute -right-24 top-1/2 transform -translate-y-1/2 bg-white/80 p-4 rounded-full shadow-lg hover:bg-white/90" />
               </Carousel>
             </div>
           )}

@@ -1,3 +1,4 @@
+import { FaInstagram } from "react-icons/fa";
 import { Button } from "./ui/button";
 import {
   Dialog,
@@ -6,7 +7,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "./ui/dialog";
-import { Instagram, MessageCircle } from "lucide-react";
+import { Contact2, MessageCircle } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -42,6 +43,18 @@ export default function Hero() {
               </DialogTitle>
             </DialogHeader>
 
+            <Button className="w-1/2 p-5 bg-blue-600">
+            <a
+              href="tel:+919518329121"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-2 items-center"
+            >
+              
+                <Contact2 /> Contact Us
+             
+            </a>
+            </Button>
             <Button className="w-1/2 p-5 bg-green-700">
             <a
               href="https://wa.me/919518329121?text=Hello%20there!"
@@ -57,7 +70,7 @@ export default function Hero() {
             <Button className="w-1/2  p-5 bg-zinc-900">
             <a href="https://www.instagram.com/tsp_hair_and_makeup_salon/" className="flex gap-2 items-center">
              
-                <Instagram /> Instagram
+                <FaInstagram /> Instagram
             </a>
             </Button>
           </DialogContent>

@@ -8,7 +8,7 @@ import Testimonials from "./components/Testimonials";
 import { Scissors } from 'lucide-react';
 import Footer from "./components/Footer";
 import TeamSection from "./components/TeamSection";
-
+import VideoSection from "./components/VideoSection";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         </div>
         <ServicesSection/>
         <TeamSection/>
+        <VideoSection/>
         <GallerySection/>
         <Testimonials/>
         
