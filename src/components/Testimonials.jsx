@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
-
-const testimonials = [
+import woman from '../assets/images/woman.png';
+const testimonials = [  
   {
     name: "Prerana Shewale",
     image: "https://images.pexels.com/photos/296649/pexels-photo-296649.jpeg?auto=compress&cs=tinysrgb&w=600  ",
@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     name: "Pooja Dond",
-    image: "Public/images/woman.png",
+    image: woman,
     text: "I got the best haircut from TSP Salon! The stylist was very professional and understood exactly what I wanted. Highly recommended!",
     rating: "★★★★★",
   },

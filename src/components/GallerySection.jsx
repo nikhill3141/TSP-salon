@@ -3,15 +3,25 @@ import { motion } from "framer-motion";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 
+// Import all images
+import gallary1 from '../assets/images/gallary1.jpeg';
+import gallary2 from '../assets/images/gallary2.jpeg';
+import gallary3 from '../assets/images/gallary3.jpeg';
+import gallary4 from '../assets/images/gallary4.jpeg';
+import gallary5 from '../assets/images/gallary5.jpeg';
+import gallary6 from '../assets/images/gallary6.jpeg';
+import gallary7 from '../assets/images/gallary7.jpeg';
+import gallary9 from '../assets/images/gallary9.jpeg';
+
 const galleryImages = [
-  { src: "Public/images/Gallary1.jpeg", alt: "Hair Styling Work" },
-  { src: "Public/images/Gallary2.jpeg", alt: "Hair Styling Work" },
-  { src: "Public/images/Gallary3.jpeg", alt: "Hair Styling Work" },
-  { src: "Public/images/Gallary4.jpeg", alt: "Hair Styling Work" },
-  { src: "Public/images/Gallary5.jpeg", alt: "Makeup Application" },
-  { src: "Public/images/Gallary6.jpeg", alt: "Makeup Application" },
-  { src: "Public/images/Gallary7.jpeg", alt: "Makeup Application" },
-  { src: "Public/images/Gallary9.jpeg", alt: "Makeup Application" },
+  { src: gallary1, alt: "Hair Styling Work" },
+  { src: gallary2, alt: "Hair Styling Work" },
+  { src: gallary3, alt: "Hair Styling Work" },
+  { src: gallary4, alt: "Hair Styling Work" },
+  { src: gallary5, alt: "Makeup Application" },
+  { src: gallary6, alt: "Makeup Application" },
+  { src: gallary7, alt: "Makeup Application" },
+  { src: gallary9, alt: "Makeup Application" },
 ];
 
 export default function Gallery() {

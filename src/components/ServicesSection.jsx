@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-
+import HairColorImg from '../assets/images/HairColorImg.jpeg';
+import MakeupImg from '../assets/images/MakupImg.jpeg';
 const services = [
   {
     title: "Hair Services",
@@ -20,13 +21,13 @@ const services = [
   },
   {
     title: "Hair Color",
-    image: "Public/images/HairColorImg.jpeg",
+    image: HairColorImg,  
     description: "Enhance your beauty with our premium hair coloring services. From classic shades to trendy highlights, and global colors. Our expert colorists create personalized looks that complement your style and skin tone."
   },
 
   {
     title: "Makeup Application",
-    image: "Public/images/MakupImg.jpeg",
+    image: MakeupImg,
     description: "Transform your look with our professional makeup services. our skilled artists use premium products to enhance your look and create stunning results perfect for any occasion - weddings, parties, or photoshoots."
   },
   
