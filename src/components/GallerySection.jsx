@@ -71,13 +71,13 @@ export default function Gallery() {
 
       {/* Dialog for Image Preview */}
       <Dialog open={isDialogOpen} onOpenChange={() => setSelectedImageIndex(null)}>
-        <DialogContent className="flex flex-col justify-center items-center m-0 bg-transparent border-none shadow-none [&>button]:border-0 [&>button]:bg-transparent [&>button]:shadow-none [&>button]:w-14 [&>button]:h-14 [&>button]:absolute [&>button]:top-0 [&>button]:right-0 [&>button]:z-50 [&>button_svg]:w-10 [&>button_svg]:h-10 [&>button_svg]:text-white [&>button_svg]:stroke-[3] [&>button_svg]:drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)]">
+        <DialogContent className="flex flex-col justify-center ml-1 items-center p-0 bg-transparent border-none shadow-none [&>button]:flex [&>button]:items-center [&>button]:justify-center [&>button]:border-none [&>button]:rounded-full  [&>button]:bg-black [&>button]:shadow-none [&>button]:w-10 [&>button]:h-10    [&>button_svg]:size-6   [&>button_svg]:text-white">
           {isDialogOpen && (
             <div className="relative w-auto max-w-[90vw] sm:max-w-[70vw]">
-              <Carousel>
+              <Carousel className="relative w-full">
                 <CarouselContent>
                   {galleryImages.map((image, idx) => (
-                    <CarouselItem key={idx} className="flex justify-center items-center px-20">
+                    <CarouselItem key={idx} className="flex justify-center items-center px-4 sm:px-20">
                       <motion.img
                         src={image.src}
                         alt={image.alt}
@@ -90,8 +90,8 @@ export default function Gallery() {
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious className="absolute -left-32 md:-left-40 top-1/2 transform -translate-y-1/2 bg-white/80 p-4 rounded-full shadow-lg hover:bg-white/90" />
-                <CarouselNext className="absolute -right-24 top-1/2 transform -translate-y-1/2 bg-white/80 p-4 rounded-full shadow-lg hover:bg-white/90" />
+                <CarouselPrevious className="absolute -left-4 sm:-left-32 md:-left-40 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 sm:p-4 rounded-full shadow-lg hover:bg-white/90 z-10" />
+                <CarouselNext className="absolute -right-4 sm:-right-24 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 sm:p-4 rounded-full shadow-lg hover:bg-white/90 z-10" />
               </Carousel>
             </div>
           )}

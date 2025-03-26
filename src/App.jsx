@@ -5,14 +5,15 @@ import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
 import GallerySection from "./components/GallerySection";
 import Testimonials from "./components/Testimonials";
-import { Scissors } from 'lucide-react';
+// import { Scissors } from 'lucide-react';
 import Footer from "./components/Footer";
 import TeamSection from "./components/TeamSection";
 import VideoSection from "./components/VideoSection";
+import ConsultancySection from "./components/ConsultancySection";
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="relative">
       <Navbar/>
       <main className="">
         <Hero />
@@ -26,18 +27,12 @@ function App() {
         <Testimonials/>
         
         
-        
       </main>
       <Footer />
      
+        <ConsultancySection/>
       
-      {/* Floating Booking Button */}
-      <a 
-        href="#booking" 
-        className="fixed bottom-8 right-8 bg-zinc-800 hover:bg-zinc-900 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:-translate-y-1 z-50"
-      >
-        <Scissors className="w-6 h-6" />
-      </a>
+     
     </div>
   );
 }
