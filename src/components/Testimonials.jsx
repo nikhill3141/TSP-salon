@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     name: "Tushar Ahire",
-    image: "https://lh3.googleusercontent.com/a-/ALV-UjUhcq90T-fOotrmBM1fp6EuwW5lVDoQa8yvNHsRsFz7Kx6Gq1Cv=w75-h75-p-rp-mo-ba3-br100",
+    image: "https://img.freepik.com/premium-photo/profile-icon-white-background_941097-162022.jpg?w=2000",
     text: "The facial treatment I received from TSP Salon experienced staff was absolutely amazing! They analyzed my skin and created a custom treatment that addressed all my concerns. My confidence has improved so much!",
     rating: "★★★★★",
   },

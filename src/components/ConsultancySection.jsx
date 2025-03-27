@@ -228,7 +228,7 @@ export default function ConsultancySection() {
               <div className="max-h-[80vh] overflow-y-auto">
                 {/* Expert Suggestion Strip */}
                 <div className="bg-black py-4 px-4 sticky top-0 z-10">
-                  <h2 className="text-white text-center text-lg sm:text-xl font-semibold tracking-wider">
+                  <h2 className="text-yellow-700 text-center text-lg sm:text-xl font-semibold tracking-wider">
                     TSP EXPERTS SUGGESTION
                   </h2>
                 </div>
@@ -312,7 +312,7 @@ export default function ConsultancySection() {
                    
                   </motion.div>
                   <div className="flex flex-col justify-center items-center">
-                  <h1 className="text-gray-600 font-bold text-lg  mt-4">For more information, contact us on </h1>
+                  <h1 className="text-gray-600 font-bold text-lg  mt-4">For more information, contact us </h1>
                   </div>
 
 
